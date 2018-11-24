@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/assets/main.css">
+    <title>Dennis Ritchie - A Tribute</title>
+</head>
+<body>
+    <div id="main">
+        <div id="title">Dennis Ritchie</div>
+        <div id="img-div">
+            <img src="./assets/img/ritchie.jpg" alt="" id="image">
+            <div id="img-caption">Dennis Ritchie - A reknowned Computer Scientist who invented Unix System. Also known as the <em>Father of C</em></div>
+        </div>
+        <div id="tribute-info">
+            <div id="headline">A Brief Timeline</div>
+            <ul>
+                <li><strong>Sept 9, 1941 - </strong>Born in Bronxville, NY</li>
+                <li><strong>Jan 1, 1967 - </strong>Ritchie started working at Bell Labs in 1967. Here is where he worked on Multics operating system.</li>
+                <li><strong>May 1, 1968 - </strong>Ritchie earned his bachelor's degree in Physics in 1963, and completed his Doctorate degree in Mathematics in 1968 from Harvard University.</li>
+                <li><strong>Jan 1, 1969 - </strong>Bell Labs dropped the Multics operating systems project in 1969. This prompted Ritchie to develop C programming language and, with Thompson, create the UNIX operating system.</li>
+                <li><strong>Nov 3, 1971 - </strong>Unix was released on November 3rd, 1971, opening a operating system to work on a variety of platforms with highly adapted quality.</li>
+                <li><strong>Jan 1, 1972 - </strong>Ritchie and Thompson's operating system was not functioning on the more advanced PDP-11 mini computer in 1971. This prompted Ritchie to create C programming lanuage</li>
+                <li><strong>Jan 1, 1973 - </strong>Ritchie and Thompson wrote UNIX using C programming language. This allowed for UNIX to work a wide variety of computers in a range of large and minicomputers and advanced to simple computers.</li>
+                <li><strong>Jan 1, 1983 - </strong>Cowinner (with Ken Thompson) of the A.M. Turing Award. They recieved this award for, "their development of generic operating systems theory and specifically for the implementation of the UNIX operating system" (Hosch).</li>
+                <li><strong>Jan 1, 1988 - </strong>Ritchie was elected into the U.S National Academy of Engineering in 1988.</li>
+                <li><strong>Jan 1, 1990 - </strong> Ritchie was appointed the head of the System Software Research Department at Bell Labs in 1990.</li>
+                <li><strong>Jan 1, 1994 - </strong>Awarded the 1994 Computer Pioneer Award, "In recognition of contribution to the development of Unix" (Dennis).</li>
+                <li><strong>Jan 1, 1995 - </strong>In 1995 Ritchie (and his team) released Plan 9 operating system. Plan 9 attempted to integrate graphics and networking into a Unix platform. "They kept the Unix choice to mediate access to as many system services as possible through a single big file-hierarchy name space" (Plan 9).</li>
+                <li><strong>Apr 1, 1996 - </strong>Ritchie (with team members) released the inferno Operating System in April 1996.</li>
+                <li><strong>Apr 21, 1999 - </strong>Richie and Thompson are awarded the U.S. National Medal of Technology Award from President Bill Clinton for inventing UNIX and C programming language.</li>
+                <li><strong>Oct 12, 2011 - </strong>Died October 12th, 2011 in Berkeley Heights, NJ</li>
+            </ul>
+        </div>
+        <footer>
+            Check <a href="https://www.timetoast.com/timelines/dennis-ritchie-4a1a22ba-f141-403a-856d-d0e2b2dec9c7" id="tribute-link" target="_blank">this out</a> to know more about <a href="" id="tribute-link" target="_blank">Dennis Ritchie</a>
+        </footer>
+    </div>
+    <script>
+        let li = document.querySelectorAll('li');
+
+        for(let i = 0; i<li.length; i++) {
+            i % 2 === 0 ? li[i].style.background = '#14141423' : li[i].style.background = 'unset'
+        }
+    </script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
