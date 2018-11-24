@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background: #c5c5c5;
+}
+input, textarea, select {
+    border: 1px solid #b891ece0;
+    background: transparent;
+    border-radius: 3px;
+}
+form {
+    width: 60%;
+    margin: auto;
+    border: 1px solid #b891ece0;
+    padding: 2rem;
+    border-radius: 5px;
+    background: #fff;
+}
+#title {
+    text-align: center;
+    font-family: serif;
+}
+#description {
+    text-align: center;
+    margin: 2rem 0;
+}
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.text, .input-field {
+    width: 40%;
+    padding: .5rem;
+    margin: .3rem 0;
+}
+.text {
+    text-align: right;
+}
+input, select, textarea {
+    width: 100%;
+    box-sizing: border-box;
+}
+input[type="checkbox"], input[type="radio"] {
+    width: unset;
+}
+input[type="submit"] {
+    width: auto;
+    align-self: center;
+    margin: 1.5rem 0;
+    padding: .5rem 1rem;
+    background: #141414;
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+}
+footer {
+    margin: 4rem 0;
+    text-align: center;
+}
+
+@media (max-width: 800px) {
+    form {
+        width: 90%;
+        padding: 10px;
+    }
+    .text, .input-field {
+        width: 100%;
+        text-align: left;
+        padding: inherit 0;
+    }
+}

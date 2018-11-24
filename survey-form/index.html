@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./assets/main.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <h1 id="title">Survey Form</h1>
+    <form action="" id="survey-form">
+        
+        <p id="description">Just another awesome survey! Note that you won't get any reward if you complete this form. I respect your privacy. Hence, I don't send this form's data to anywhere else. You may proceed now.</p>
+
+        <div class="flex">
+            <label class="text" for="name" id="name-label">Name: </label>
+            <input class="input-field" type="text" name="name" id="name" required placeholder="Your Beautiful Name">
+        </div>
+        
+        <div class="flex">
+            <label class="text" for="email" id="email-label">Email: </label>
+            <input class="input-field" type="email" name="email" id="email" required placeholder="Your Best Email">
+        </div>
+
+        <div class="flex">
+            <label for="number" class="text" id="number-label">Age: </label>
+            <input class="input-field" type="number" name="age" id="number" min="0" max="150" placeholder="Don't Lie, Put Your Correct Age :)">
+        </div>
+
+        <div class="flex">
+            <div class="text">Which role describes you best?</div>
+            <select name="profession" id="dropdown" class="input-field">
+                <option value="student" class="option1">Student</option>
+                <option value="instructor" class="option2">Instructor</option>
+                <option value="developer" class="option3">Developer</option>
+                <option value="dont-wanna-answer" class="option4">Don't Want to Answer</option>
+            </select>
+        </div>
+
+        <div class="flex">
+            <div class="text">Which is Your Favorite Editor?</div>
+            <div class="input-field">
+                <input type="radio" name="radio" value="subl3">Sublime Text 3 <br>
+                <input type="radio" name="radio" value="vscode">Visual Studio Code <br>
+                <input type="radio" name="radio" value="atom">Atom <br>
+                <input type="radio" name="radio" value="other">Other <br>
+            </div>
+        </div>
+
+        <div class="flex">
+            <div class="text">I Have No Idea What Options to Put :(</div>
+            <div class="input-field">
+                <input type="checkbox" name="checkbox" value="1st">First Option <br>
+                <input type="checkbox" name="checkbox" value="2nd">Second Option <br>
+                <input type="checkbox" name="checkbox" value="3rd">Third Option <br>
+            </div>
+        </div>
+
+        <div class="flex">
+            <div class="text">Write Down Whatever You Want</div>
+            <textarea class="input-field" name="something-else" rows="4"></textarea>
+        </div>
+
+        <div class="flex">
+            <input type="submit" id="submit" value="Submit">
+        </div>
+    </form>
+    <footer>
+        Thank You for Visiting!
+    </footer>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
